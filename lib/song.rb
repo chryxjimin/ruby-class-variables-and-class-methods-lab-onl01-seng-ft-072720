@@ -24,6 +24,19 @@ class Song
      @@genres << genre
    end
 
+   def self.count
+      @@count
+   end
+
+   def self.artists
+     @@artists.uniq
+   end
+
+
+  def self.genres
+     @@genres.uniq
+  end
+
    def self.genre_count
       genre_count = Hash.new(0)
       @@genres.each {|genre| genre|genre_count| += 1}
@@ -35,17 +48,5 @@ class Song
      @@artists.each {|artist| artist|artist_count| += 1}
      artist_count
      #binding.pry
-   end
-
-   def self.count
-      @@count
-   end
-
-   def self.genres
-      @@genres.uniq
-   end
-
-   def self.artists
-     @@artists.uniq
-   end
+   end   
 end
