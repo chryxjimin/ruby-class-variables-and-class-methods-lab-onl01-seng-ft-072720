@@ -24,12 +24,12 @@ class Song
    end
 
    def self.genres
-      @@genres
+      @@song_genres
       #@@genres << genres
    end
 
    def self.artists
-     @@artists
+     @@song_artists
      #@@artists << artists
    end
 
