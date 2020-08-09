@@ -30,6 +30,7 @@ class Song
 
    def self.artist_count
      @@artist_count = {}
+     binding.pry
    end
 
    def self.count
@@ -43,6 +44,4 @@ class Song
    def self.artists
      @@artists.uniq
    end
-
-#binding.pry
 end
